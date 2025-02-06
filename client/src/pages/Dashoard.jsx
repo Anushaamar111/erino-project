@@ -41,7 +41,7 @@ export default function Dashboard() {
   });
   const [darkMode, setDarkMode] = useState(false);
 
-  const API_URL = "http://localhost:8000/api/expenses";
+  const API_URL = `${import.meta.env.VITE_BACKEND_URL}/api/expenses`
   const itemsPerPage = 10;
 
   const fetchExpenses = async () => {
