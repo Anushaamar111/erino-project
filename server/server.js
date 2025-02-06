@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 // Update allowedOrigins to include the frontend URL directly
-const allowedOrigins = [process.env.VITE_FRONTEND_URL, 'http://localhost:5173', 'https://erino-project-frontend.vercel.app'];
+const allowedOrigins = process.env.VITE_FRONTEND_URL;
 
 app.use(cors({
   credentials: true,
