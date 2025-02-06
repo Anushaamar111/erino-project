@@ -11,7 +11,7 @@ const Login = () => {
   const [form, setForm] = useState({ email: "", password: "", name: "" });
   const [error, setError] = useState("");
 
-  const API_URL = "http://localhost:8000/api/auth";
+  const API_URL = `${import.meta.env.VITE_BACKEND_URL}/api/auth`;
 
   const handleSubmit = async (e) => {
     e.preventDefault();
