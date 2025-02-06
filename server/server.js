@@ -13,7 +13,7 @@ connectDB();
 app.use(express.json());
 app.use(cookieParser());
 
-const allowedOrigins = [process.env.VITE_FRONTEND_URL, 'http://localhost:5173'];
+const allowedOrigins = [process.env.VITE_FRONTEND_URL, 'http://localhost:5173', 'https://erino-project-frontend.vercel.app'];
 
 app.use(cors({
   credentials: true,
